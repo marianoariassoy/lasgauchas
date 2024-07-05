@@ -26,7 +26,7 @@ const ImageComponent = ({ src, alt, color }: Props) => {
     <img
       src={src}
       alt={alt}
-      className='fade-in h-full w-full object-cover object-center'
+      className='fade-in-delay h-full w-full object-cover object-center'
     />
   )
 }

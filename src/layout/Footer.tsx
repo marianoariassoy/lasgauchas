@@ -1,21 +1,19 @@
-import { useLocation } from 'wouter'
+import { Link } from 'wouter'
 import { Logo } from '../components/icons'
 import { menu, social } from '../components/data'
 
-const Footer = () => {
-  const [location] = useLocation()
-
+const Footer = ({ location }) => {
   return (
     <footer className='py-12 flex justify-between lg:items-center gap-x-3 px-6 lg:px-16'>
       <div className='flex flex-col gap-y-12'>
         <nav className='flex flex-col'>
           {menu.map((item, index) => (
-            <a
+            <Link
               key={index}
               href={location === '/' ? item.path : '/'}
             >
               {item.title}
-            </a>
+            </Link>
           ))}
         </nav>
         <nav className='flex gap-x-3'>

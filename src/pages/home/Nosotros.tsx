@@ -4,11 +4,11 @@ const Nosotros = () => {
   return (
     <section
       className='bg-light-gray text-black relative'
-      id='nosotros'
+      id='quienes-somos'
     >
       <div className='absolute top-0 w-full h-1/2 bg-black'></div>
       <div className='w-full max-w-6xl mx-auto px-6 py-20 relative flex flex-col gap-y-6'>
-        <div className='absolute top-1/3'>
+        <div className='absolute top-1/3 z-10'>
           <h1 className='font-secondary text-8xl text-white'>quienes somos</h1>
         </div>
         <div className='flex justify-end'>
@@ -23,7 +23,7 @@ const Nosotros = () => {
         <div className='flex gap-x-12'>
           <div className='flex-none'>
             <Image
-              src='./images/nosotros-2.jpg'
+              src='./images/nosotros-2.png'
               alt='nosotros'
               color='black'
             />

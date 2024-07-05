@@ -8,7 +8,7 @@ const Social = () => {
           key={index}
           href={item.url}
           target='_blank'
-          className='hover:text-white/50 transition-all'
+          className='hover:opacity-70 transition-all'
         >
           {item.icon}
         </a>

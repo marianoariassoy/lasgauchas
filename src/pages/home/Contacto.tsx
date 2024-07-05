@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
 import Form from './Form'
+import scroll from '../../utils/scroll'
 
 const Contacto = () => {
+  useEffect(() => {
+    scroll()
+  }, [])
+
   return (
     <section
       className='bg-light-gray text-black'

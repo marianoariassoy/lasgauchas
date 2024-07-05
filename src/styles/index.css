@@ -42,7 +42,7 @@ body {
   margin-top: 0.25rem;
 }
 .main-nav:hover::after {
-  background: white;
+  background: currentColor;
 }
 .productos-item {
   background-image: url('./images/bg-productos.jpg');
