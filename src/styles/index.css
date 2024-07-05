@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  accent-color: black;
+  font-optical-sizing: auto;
+  background-color: black;
+  font-weight: 500;
+}
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  align-items: flex-end;
+}
+
+.font-secondary {
+  font-family: 'BERNIERTM', cursive;
+}
+.indicators {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  bottom: 2rem;
+  left: 0;
+}
+.indicators li {
+  margin: 0 0.3rem !important;
+  text-align: center;
+}
+.indicators li button::before {
+  background: white !important;
+}
+.main-nav::after {
+  background: transparent;
+  height: 3px;
+  width: 1.25rem;
+  content: '';
+  display: block;
+  margin-top: 0.25rem;
+}
+.main-nav:hover::after {
+  background: white;
+}
+.productos-item {
+  background-image: url('./images/bg-productos.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-light-gray {
+  background-color: #f8f8f8;
+}
