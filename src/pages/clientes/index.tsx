@@ -380,11 +380,11 @@ const Index = () => {
 
   return (
     <Layout>
-      <section className='bg-light-gray text-black flex flex-col gap-y-20 mt-32'>
-        <div className='w-full max-w-7xl mx-auto px-6 flex gap-x-12'>
-          <div className='w-1/5 flex flex-col items-end gap-y-20 pt-32 fade-in'>
-            <nav>
-              <ul className='font-secondary text-5xl text-right flex flex-col gap-y-3'>
+      <section className='bg-light-gray text-black items-start flex flex-col gap-6 lg:gap-y-20 mt-32'>
+        <div className='w-full max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-6 lg:gap-12'>
+          <div className='lg:w-1/5 flex flex-col items-end gap-6 lg:gap-y-20 lg:pt-32 fade-in'>
+            <nav className='w-full'>
+              <ul className='font-secondary text-3xl lg:text-5xl lg:text-right flex flex-col lg:gap-y-3'>
                 {data.map((item, index) => (
                   <li key={index}>
                     <button
@@ -397,16 +397,16 @@ const Index = () => {
                 ))}
               </ul>
             </nav>
-            <div>
-              <div className='flex items-center justify-end gap-x-2'>
+            <div className='w-full'>
+              <div className='flex items-center lg:justify-end gap-x-2'>
                 Precocidas: <Cold />
               </div>
-              <div className='flex items-center justify-end gap-x-2'>
+              <div className='flex items-center lg:justify-end gap-x-2'>
                 Calientes: <Fire />
               </div>
             </div>
           </div>
-          <div className='w-4/5 fade-in-delay'>
+          <div className='lg:w-4/5 fade-in-delay'>
             <h2 className='font-bold uppercase mb-6'>dónde estamos</h2>
             <div className='flex flex-col gap-y-6'>
               {data[active].options.map((item, index) => (
@@ -415,7 +415,7 @@ const Index = () => {
                   className='flex flex-col gap-y-3'
                 >
                   <h3 className='text-3xl font-secondary'>{item.title}</h3>
-                  <div className='grid grid-cols-2 gap-x-6 gap-y-3'>
+                  <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3'>
                     {item.places.map((place, index) => (
                       <Item
                         key={index}
@@ -428,7 +428,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className='bg-black/80 text-white'>
+        <div className='bg-black/80 text-white w-full'>
           <div className='flex justify-between items-center max-w-7xl mx-auto px-6 py-8'>
             <div>¿Querés formar parte? Contactanos y te daremos toda la información que necesitas!</div>
             <div>

@@ -2,6 +2,8 @@ import { Route, Switch } from 'wouter'
 import Home from './pages/home'
 import Clientes from './pages/clientes'
 import Sucursales from './pages/sucursales'
+import NuestrasEmpanadas from './pages/nuestras-empanadas'
+import EmpanadasCongeladas from './pages/empanadas-congeladas'
 import Error from './pages/error'
 
 function App() {
@@ -19,7 +21,14 @@ function App() {
         path='/sucursales'
         component={Sucursales}
       />
-
+      <Route
+        path='/nuestras-empanadas'
+        component={NuestrasEmpanadas}
+      />
+      <Route
+        path='/empanadas-congeladas'
+        component={EmpanadasCongeladas}
+      />
       <Route component={Error} />
     </Switch>
   )

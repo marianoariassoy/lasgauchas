@@ -6,18 +6,18 @@ import { Forward, Back } from '../../components/icons'
 const Productos = () => {
   const sliderProperties = {
     autoplay: false,
-    transitionDuration: 500,
+    transitionDuration: 300,
     indicators: true,
     arrows: true,
     infinite: true,
     pauseOnHover: false,
     prevArrow: (
-      <button className='ml-12 hover:ml-10 transition-all'>
+      <button className='ml-12 top-12 left-auto right-20 flex justify-end hover:ml-10 transition-all lg:right-auto lg:top-auto'>
         <Back />
       </button>
     ),
     nextArrow: (
-      <button className='mr-12 hover:mr-10 transition-all'>
+      <button className='mr-6 top-12 lg:mr-12 hover:mr-10 transition-all lg:top-auto'>
         <Forward />
       </button>
     )

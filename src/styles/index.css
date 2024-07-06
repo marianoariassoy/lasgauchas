@@ -49,6 +49,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+.congeladas-item {
+  background-image: url('./images/bg-empanadas.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .bg-light-gray {
   background-color: #f8f8f8;
 }

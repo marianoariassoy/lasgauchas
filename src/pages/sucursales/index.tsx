@@ -35,11 +35,11 @@ const Index = () => {
 
   return (
     <Layout>
-      <section className='bg-light-gray text-black fade-in flex flex-col gap-y-20 mt-32'>
-        <div className='grid grid-cols-3 gap-x-16 items-center'>
+      <section className='bg-light-gray px-6 text-black fade-in flex flex-col gap-y-20 mt-32'>
+        <div className='grid grod-cols-1 lg:grid-cols-3 gap-y-6 lg:gap-16 items-center'>
           <div>
             <nav>
-              <ul className='font-secondary text-5xl text-right flex flex-col gap-y-3'>
+              <ul className='font-secondary text-3xl lg:text-5xl mb-6 lg:text-right flex flex-col lg:gap-y-3'>
                 {menu.map((item, index) => (
                   <li key={index}>
                     <button
@@ -54,7 +54,7 @@ const Index = () => {
             </nav>
           </div>
           <div>
-            <h2 className='font-bold mb-12'>SUCURSALES</h2>
+            <h2 className='font-bold mb-6 lg:mb-12'>SUCURSALES</h2>
             <img
               src={active === 'salta' ? '/images/salta.jpg' : '/images/buenos-aires.jpg'}
               alt='Imagen ciudad de salta'
@@ -65,15 +65,15 @@ const Index = () => {
           {active === 'salta' ? (
             <div className='flex flex-col gap-y-6'>
               <div>
-                <h3 className='font-secondary text-3xl'>salta capital</h3>
-                <p>
+                <h3 className='font-secondary text-xl lg:text-3xl'>salta capital</h3>
+                <p className='text-sm lg:text-base'>
                   Los Eucaliptus 246, B° Tres Cerritos <br />
                   Contacto: (387) 594-4702
                 </p>
               </div>
               <div>
-                <h3 className='font-secondary text-3xl'>san luis</h3>
-                <p>
+                <h3 className='font-secondary text-xl lg:text-3xl'>san luis</h3>
+                <p className='text-sm lg:text-base'>
                   Paseo gastronómico “El Prado”, San Luis <br />
                   Contacto: (387) 632-3720
                 </p>
@@ -82,8 +82,8 @@ const Index = () => {
           ) : (
             <div className='flex flex-col gap-y-6'>
               <div>
-                <h3 className='font-secondary text-3xl'>bella vista</h3>
-                <p>
+                <h3 className='font-secondary text-xl lg:text-3xl'>bella vista</h3>
+                <p className='text-sm lg:text-base'>
                   “Paseo Norte”, Dr. Pedro A. Pardo 1609, Bella Vista <br />
                   Contacto: (011) 3111-3377
                 </p>

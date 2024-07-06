@@ -7,7 +7,7 @@ const Hero = () => {
       className='h-screen'
       id='home'
     >
-      <div className='absolute w-full h-full flex items-center justify-center text-6xl z-10 fade-in'>
+      <div className='absolute w-full h-full flex items-center justify-center text-6xl z-10 fade-in px-20'>
         <Logo />
       </div>
       <Image

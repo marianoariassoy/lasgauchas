@@ -3,7 +3,7 @@ import { Link } from 'wouter'
 
 const Nav = ({ location }) => {
   return (
-    <nav>
+    <nav className='hidden lg:block'>
       <ul className='flex gap-x-10'>
         {menu.map((item, index) => (
           <li key={index}>

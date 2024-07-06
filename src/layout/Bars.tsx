@@ -7,7 +7,7 @@ const NavMenu = () => {
   }
   return (
     <button
-      className='hover:text-white/50'
+      className='lg:hidden'
       id='nav-menu'
       onClick={openMenu}
     >

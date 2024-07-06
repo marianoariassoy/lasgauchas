@@ -2,7 +2,7 @@ import { Cold, Fire, Pin } from '../../components/icons'
 
 const Item = ({ data }) => {
   return (
-    <article className='flex items-start gap-x-3'>
+    <article className='flex items-start gap-x-3 text-sm lg:text-base'>
       <div>
         <Pin />
       </div>

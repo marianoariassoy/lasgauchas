@@ -6,10 +6,10 @@ const Nosotros = () => {
       className='bg-light-gray text-black relative'
       id='quienes-somos'
     >
-      <div className='absolute top-0 w-full h-1/2 bg-black'></div>
-      <div className='w-full max-w-6xl mx-auto px-6 py-20 relative flex flex-col gap-y-6'>
-        <div className='absolute top-1/3 z-10'>
-          <h1 className='font-secondary text-8xl text-white'>quienes somos</h1>
+      <div className='absolute top-0 w-full h-80 lg:h-1/2 bg-black'></div>
+      <div className='w-full max-w-6xl mx-auto px-6 pt-20 pb-6 lg:py-20 relative flex flex-col gap-y-3 lg:gap-y-6'>
+        <div className='absolute top-32 lg:top-1/3 z-10'>
+          <h1 className='font-secondary text-5xl lg:text-8xl text-white'>quienes somos</h1>
         </div>
         <div className='flex justify-end'>
           <div className='w-10/12'>
@@ -20,15 +20,17 @@ const Nosotros = () => {
             />
           </div>
         </div>
-        <div className='flex gap-x-12'>
-          <div className='flex-none'>
-            <Image
-              src='./images/nosotros-2.png'
-              alt='nosotros'
-              color='black'
-            />
+        <div className='flex flex-col-reverse lg:flex-row gap-y-6 gap-x-12'>
+          <div className='flex flex-none justify-center items-center'>
+            <div className='w-1/2 lg:w-auto'>
+              <Image
+                src='./images/nosotros-2.png'
+                alt='nosotros'
+                color='black'
+              />
+            </div>
           </div>
-          <div className='text-balance flex-grow pt-6'>
+          <div className='text-balance flex-grow pt-6 text-sm lg:text-base'>
             Fundada en 2014 como "Los Blanco", Las Gauchas comenzó como una pequeña tienda de empanadas ubicada en el
             barrio de Tres Cerritos en Salta. Inspirados en un antiguo negocio familiar y preservando las tradiciones
             culinarias de nuestra cultura, empezamos a crear recetas que reflejan nuestra identidad.
