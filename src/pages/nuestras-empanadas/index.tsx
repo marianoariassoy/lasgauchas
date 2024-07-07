@@ -13,17 +13,17 @@ const Index = () => {
   const sliderProperties = {
     autoplay: false,
     transitionDuration: 300,
-    indicators: true,
+    indicators: false,
     arrows: true,
     infinite: true,
     pauseOnHover: false,
     prevArrow: (
-      <button className='ml-12 top-12 left-auto right-20 flex justify-end hover:ml-10 transition-all lg:right-auto lg:top-auto'>
+      <button className='ml-12 top-12 left-auto right-20 flex justify-end lg:hover:ml-10 transition-all lg:right-auto lg:top-auto'>
         <Back />
       </button>
     ),
     nextArrow: (
-      <button className='mr-6 top-12 lg:mr-12 hover:mr-10 transition-all lg:top-auto'>
+      <button className='mr-6 top-12 lg:mr-12 lg:hover:mr-10 transition-all lg:top-auto'>
         <Forward />
       </button>
     )
@@ -90,7 +90,7 @@ INFORMACIÓN  NUTRICIONAL: Valor energético 245 Kcal = 1338 KJ (12%VD*). Carboh
 
   return (
     <Layout>
-      <section className='w-screen mt-32'>
+      <section className='w-screen mt-32 fade-in'>
         <Slide {...sliderProperties}>
           {data.map((item, index) => (
             <Item

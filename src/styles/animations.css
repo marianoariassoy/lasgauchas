@@ -6,6 +6,10 @@
   opacity: 0;
   animation: fade-in 0.3s ease-in-out forwards 0.4s;
 }
+.fade-in-fast {
+  opacity: 0;
+  animation: fade-in 0.3s ease-in-out forwards;
+}
 @keyframes fade-in {
   0% {
     opacity: 0;

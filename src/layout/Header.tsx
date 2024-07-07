@@ -13,12 +13,10 @@ const Header = ({ location }: { location: string }) => {
     window.onscroll = () => {
       if (window.scrollY > 100) {
         logo?.classList.add('text-[0.6rem]')
-        header?.classList.add('bg-black/70')
         header?.classList.add('pt-3')
         header?.classList.add('pb-3')
       } else {
         logo?.classList.remove('text-[0.6rem]')
-        header?.classList.remove('bg-black/70')
         header?.classList.remove('pt-3')
         header?.classList.remove('pb-3')
       }

@@ -12,12 +12,12 @@ const Productos = () => {
     infinite: true,
     pauseOnHover: false,
     prevArrow: (
-      <button className='ml-12 top-12 left-auto right-20 flex justify-end hover:ml-10 transition-all lg:right-auto lg:top-auto'>
+      <button className='ml-12 top-12 left-auto right-20 flex justify-end lg:hover:ml-10 transition-all lg:right-auto lg:top-auto'>
         <Back />
       </button>
     ),
     nextArrow: (
-      <button className='mr-6 top-12 lg:mr-12 hover:mr-10 transition-all lg:top-auto'>
+      <button className='mr-6 top-12 lg:mr-12 lg:hover:mr-10 transition-all lg:top-auto'>
         <Forward />
       </button>
     )

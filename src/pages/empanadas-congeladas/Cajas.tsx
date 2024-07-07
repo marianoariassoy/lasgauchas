@@ -1,6 +1,6 @@
 const Cajas = ({ data }) => {
   return (
-    <article className='w-32 lg:w-auto'>
+    <article className='w-8/12 lg:w-auto'>
       <img
         src={data}
         alt=''

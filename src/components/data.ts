@@ -15,11 +15,11 @@ export const menu = [
     categories: [
       {
         title: 'Nuestras empanadas',
-        path: '#nuestras-empanadas'
+        url: '/nuestras-empanadas'
       },
       {
         title: 'Empanadas congeladas',
-        path: '#empanadas-congeladas'
+        url: '/empanadas-congeladas'
       }
     ]
   },

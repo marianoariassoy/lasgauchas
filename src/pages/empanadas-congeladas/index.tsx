@@ -18,12 +18,12 @@ const Index = () => {
     infinite: true,
     pauseOnHover: false,
     prevArrow: (
-      <button className='ml-6 lg:ml-12 hover:ml-10 transition-all'>
+      <button className='ml-6 lg:ml-12 lg:hover:ml-10 transition-all'>
         <Back />
       </button>
     ),
     nextArrow: (
-      <button className='mr-6 lg:mr-12 hover:mr-10 transition-all'>
+      <button className='mr-6 lg:mr-12 lg:hover:mr-10 transition-all'>
         <Forward />
       </button>
     )
@@ -36,7 +36,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <section className='w-screen'>
+      <section className='w-screen fade-in'>
         <Slide {...sliderProperties}>
           {data.map((item, index) => (
             <Item
